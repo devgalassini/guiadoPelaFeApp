@@ -12,6 +12,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.appcompat.widget.Toolbar
 import br.com.tecnology.galassini.rotadaf.activitys.HomeActivity
@@ -80,14 +81,14 @@ class MainActivity : AppCompatActivity() {
 
     // Função para exibir mensagens de erro
     private fun showError(message: String) {
-        //  Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
-        showToast(this,message)
+         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+        //showToast(this,message)
     }
 
     // Função para exibir mensagens de sucesso
     private fun showMessage(message: String) {
-        // Toast.makeText(this, message, Toast.LENGTH_LONG).show()
-        showToast(this,message)
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+        //showToast(this,message)
     }
 
 
