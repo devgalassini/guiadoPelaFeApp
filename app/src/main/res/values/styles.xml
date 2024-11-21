@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EditTextStyle">
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="CustomSwitchStyle" parent="Widget.AppCompat.CompoundButton.Switch">
+        <!-- Cor do botão (polegar) -->
+        <item name="colorControlActivated">@color/primaryColor</item>
+        <!-- Cor do track (trilho) quando ativado -->
+        <item name="android:trackTint">@color/white</item>
+        <!-- Cor do track (trilho) quando desativado -->
+        <item name="android:trackTintMode">src_in</item>
+        <!-- Cor do polegar quando desativado -->
+        <item name="android:thumbTint">@color/primaryDarkColor</item>
+        <!-- Cor do texto do Switch -->
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CustomAppBarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">#71c89d</item>
+        <item name="titleTextColor">#FFFFFF</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="customButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">#71c89d</item>
+    </style>
+
+
+</resources>
+

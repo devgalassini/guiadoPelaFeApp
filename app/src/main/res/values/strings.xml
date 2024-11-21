@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Rota da Fé</string>
+    <string name="name_edit">Nome</string>
+    <string name="logo_do_aplicativo">Guiado pela Fé</string>
+    <string name="bem_vindo">Bem-vindo!</string>
+    <string name="validaTelefone">(XX) XXXXX-XXXX</string>
+    <string name="confirmar_n_mero">Confirmar Número</string>
+    <string name="ativar_notifica_es">Ativar Notificações</string>
+    <string name="notifica_es_desativadas">Notificações desativadas</string>
+</resources>
