@@ -26,11 +26,14 @@
         <item name="android:elevation">4dp</item>
         <item name="android:textSize">20sp</item>
         <item name="android:gravity">center</item>
+
     </style>
 
     <style name="customButton" parent="Widget.AppCompat.Button">
         <item name="android:background">#71c89d</item>
     </style>
+
+
 
 
 </resources>
