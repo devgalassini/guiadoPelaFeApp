@@ -9,11 +9,11 @@
 package br.com.tecnology.galassini.rotadaf.activitys
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SwitchCompat
 import br.com.tecnology.galassini.rotadaf.R
-
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,6 +38,7 @@ class HomeActivity : AppCompatActivity() {
         // Validação do número de telefone
         confirmButton.setOnClickListener {
             val phoneNumber = phoneEditText.text.toString().trim()
+            Log.d("HomeActivity", "Número inserido: $phoneNumber")
             if (isValidPhoneNumber(phoneNumber)) {
                 Toast.makeText(this, "Número confirmado: $phoneNumber", Toast.LENGTH_SHORT).show()
             } else {
@@ -57,7 +58,9 @@ class HomeActivity : AppCompatActivity() {
 
     // Função para validar número de telefone no formato (XX) XXXXX-XXXX
     private fun isValidPhoneNumber(phone: String): Boolean {
-        val regex = Regex("^\\(\\d{2}\\) \\d{5}-\\d{4}\$")
-        return phone.matches(regex)
+        // Remove todos os caracteres não numéricos
+        val sanitizedPhone = phone.replace(Regex("[^\\d]"), "")
+        // Verifica se tem 11 dígitos e começa com um DDD válido
+        return sanitizedPhone.length == 11 && sanitizedPhone.matches(Regex("^\\d{2}9\\d{8}\$"))
     }
 }
