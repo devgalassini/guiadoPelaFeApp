@@ -1,4 +1,4 @@
-# **Rota da Fé - App de Localização de Igrejas Evangélicas**
+# **Guiado pela Fé - App de Localização de Igrejas Evangélicas**
 
 
 
@@ -11,7 +11,7 @@
 
 ## Descrição
 
-O **Rota da Fé** é um aplicativo Android desenvolvido em **Kotlin** que permite aos usuários localizar **igrejas evangélicas** em tempo real, dentro de um raio específico, para que eles possam encontrar um local de adoração próximo de onde estão. O aplicativo utiliza a **geolocalização** para identificar a posição do usuário e buscar igrejas evangélicas nas proximidades, mostrando informações sobre cada igreja em tempo real.
+O **Guiado pela Fé** é um aplicativo Android desenvolvido em **Kotlin** que permite aos usuários localizar **igrejas evangélicas** em tempo real, dentro de um raio específico, para que eles possam encontrar um local de adoração próximo de onde estão. O aplicativo utiliza a **geolocalização** para identificar a posição do usuário e buscar igrejas evangélicas nas proximidades, mostrando informações sobre cada igreja em tempo real.
 
 ## Funcionalidades
 
