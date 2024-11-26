@@ -7,4 +7,9 @@
     <string name="confirmar_n_mero">Confirmar Número</string>
     <string name="ativar_notifica_es">Ativar Notificações</string>
     <string name="notifica_es_desativadas">Notificações desativadas</string>
+    <string name="texto_ser_exibido_aqui">Texto será exibido aqui</string>
+    <string name="adicionar_item">Adicionar item</string>
+    <string name="adicionar_item1">Adicionar Item</string>
+    <string name="trocar_adicionar_filtrar">Trocar Adicionar/Filtrar</string>
+    <string name="mapa_de_pre_os">Mapa de preços</string>
 </resources>
