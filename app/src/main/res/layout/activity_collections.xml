@@ -10,55 +10,74 @@
     <EditText
         android:id="@+id/addItemEditText"
         android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:hint="@string/adicionar_item"
-    android:layout_marginBottom="8dp"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_height="wrap_content"
+        android:hint="@string/adicionar_item"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Botões para interações -->
-    <Button
+    <!-- Botão para adicionar itens -->
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/addItemButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/adicionar_item1"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@id/addItemEditText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        style="@style/customButton" />
 
-    <Button
+    <!-- Botão para alternar entre modos -->
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/filterButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/trocar_adicionar_filtrar"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintTop_toBottomOf="@id/addItemButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        style="@style/customButton" />
 
-    <Button
+    <!-- Botão para exibir itens únicos -->
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/showSetButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Mostrar Itens Únicos"
+        android:text="@string/mostrar_itens_nicos"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintTop_toBottomOf="@id/filterButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        style="@style/customButton" />
 
     <!-- ListView para exibir itens -->
     <ListView
         android:id="@+id/listView"
         android:layout_width="0dp"
         android:layout_height="200dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+
         app:layout_constraintTop_toBottomOf="@id/showSetButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- TextView para exibir o mapa -->
+    <!-- TextView para exibir informações adicionais -->
     <TextView
         android:id="@+id/mapTextView"
         android:layout_width="0dp"
@@ -68,6 +87,9 @@
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@id/listView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        style="@style/customButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

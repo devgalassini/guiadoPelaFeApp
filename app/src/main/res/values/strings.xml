@@ -12,4 +12,10 @@
     <string name="adicionar_item1">Adicionar Item</string>
     <string name="trocar_adicionar_filtrar">Trocar Adicionar/Filtrar</string>
     <string name="mapa_de_pre_os">Mapa de preços</string>
+    <string name="digite_algo">Digite algo</string>
+    <string name="mostrar_itens_nicos">Mostrar Itens Únicos</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="senha">Senha</string>
+    <string name="email">Email</string>
+    <string name="exibir_texto">Exibir Texto</string>
 </resources>

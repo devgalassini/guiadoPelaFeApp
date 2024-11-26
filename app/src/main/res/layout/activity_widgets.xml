@@ -11,22 +11,30 @@
         android:id="@+id/editText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Digite algo"
+        android:hint="@string/digite_algo"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp"
+
         android:layout_marginBottom="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Button -->
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Exibir Texto"
+        android:text="@string/exibir_texto"
+        android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@id/editText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        style="@style/customButton"
+        />
 
     <!-- TextView -->
     <TextView
@@ -35,6 +43,8 @@
         android:layout_height="wrap_content"
         android:text="@string/texto_ser_exibido_aqui"
         android:textSize="18sp"
+        android:layout_marginTop="16dp"
+
         app:layout_constraintTop_toBottomOf="@id/button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -44,7 +54,7 @@
         android:id="@+id/imageView"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="50dp"
         android:src="@drawable/ic_launcher_background"
         app:layout_constraintTop_toBottomOf="@id/textView"
         app:layout_constraintStart_toStartOf="parent"
