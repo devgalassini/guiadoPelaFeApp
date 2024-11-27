@@ -8,6 +8,7 @@
 
 package br.com.tecnology.galassini.rotadaf.activitys
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.*
@@ -41,6 +42,10 @@ class HomeActivity : AppCompatActivity() {
             Log.d("HomeActivity", "Número inserido: $phoneNumber")
             if (isValidPhoneNumber(phoneNumber)) {
                 Toast.makeText(this, "Número confirmado: $phoneNumber", Toast.LENGTH_SHORT).show()
+
+                // Navegar para a tela de CollectionsActivity
+                val intent = Intent(this, CollectionsActivity::class.java)
+                startActivity(intent)
             } else {
                 phoneEditText.error = "Número de telefone inválido! Use o formato (XX) XXXXX-XXXX."
             }

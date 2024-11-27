@@ -15,27 +15,27 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <!-- EditText para adicionar itens -->
+        <!-- EditText para adicionar igrejas -->
         <EditText
             android:id="@+id/addItemEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:hint="@string/adicionar_item"
+            android:hint="@string/adicionar_igreja"
             android:minHeight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- Botão para adicionar itens -->
+        <!-- Botão para adicionar igrejas -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/addItemButton"
             style="@style/customButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/button_background"
-            android:text="@string/adicionar_item1"
+            android:text="@string/adicionar_igreja1"
             android:textColor="@android:color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +47,7 @@
             style="@style/customButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/button_background"
             android:text="@string/trocar_adicionar_filtrar"
             android:textColor="@android:color/white"
@@ -55,21 +55,35 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/addItemButton" />
 
-        <!-- Botão para exibir itens únicos -->
+        <!-- Botão para exibir igrejas únicas -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/showSetButton"
             style="@style/customButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/button_background"
-            android:text="@string/mostrar_itens_nicos"
+            android:text="@string/mostrar_igrejas_unicas"
             android:textColor="@android:color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/filterButton" />
 
-        <!-- ListView para exibir itens -->
+        <!-- Novo Botão: Ver Igreja -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/viewChurchButton"
+            style="@style/customButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:text="@string/ver_igreja"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/showSetButton" />
+
+        <!-- ListView para exibir igrejas -->
         <ListView
             android:id="@+id/listView"
             android:layout_width="0dp"
@@ -77,21 +91,32 @@
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/showSetButton" />
+            app:layout_constraintTop_toBottomOf="@id/viewChurchButton" />
 
-        <!-- TextView para exibir informações adicionais -->
+        <!-- TextView para exibir informações da igreja -->
         <TextView
-            android:id="@+id/mapTextView"
-            style="@style/customButton"
+            android:id="@+id/churchInfoTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="@drawable/button_background"
-            android:text="@string/mapa_de_pre_os"
-            android:textColor="@android:color/white"
+            android:text="@string/informacoes_igreja"
             android:textSize="16sp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/listView" />
+
+        <!-- ImageView para exibir imagem da igreja -->
+        <ImageView
+            android:id="@+id/churchImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_launcher_background"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/churchInfoTextView" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

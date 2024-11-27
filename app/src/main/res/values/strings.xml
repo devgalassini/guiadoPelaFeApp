@@ -8,14 +8,21 @@
     <string name="ativar_notifica_es">Ativar Notificações</string>
     <string name="notifica_es_desativadas">Notificações desativadas</string>
     <string name="texto_ser_exibido_aqui">Texto será exibido aqui</string>
-    <string name="adicionar_item">Adicionar item</string>
-    <string name="adicionar_item1">Adicionar Item</string>
-    <string name="trocar_adicionar_filtrar">Trocar Adicionar/Filtrar</string>
-    <string name="mapa_de_pre_os">Mapa de preços</string>
+
+    <!-- Alterações feitas aqui para Igrejas -->
+    <string name="adicionar_igreja1">Adicionar Igreja</string>
+    <string name="trocar_adicionar_filtrar">Trocar Adicionar/Filtrar Igrejas</string>
+    <string name="mapas_de_igrejas">Mostrar Igrejas Disponiveis</string>
     <string name="digite_algo">Digite algo</string>
-    <string name="mostrar_itens_nicos">Mostrar Itens Únicos</string>
+    <string name="mostrar_igrejas_unicas">Mostrar Igrejas Únicas</string>
+
     <string name="cadastrar">Cadastrar</string>
     <string name="senha">Senha</string>
     <string name="email">Email</string>
     <string name="exibir_texto">Exibir Texto</string>
+    <string name="adicionar_igreja">adicionar igreja</string>
+    <string name="ver_igreja">Ver Igreja</string>
+    <string name="informacoes_igreja">Informações da Igreja</string>
+
+
 </resources>
