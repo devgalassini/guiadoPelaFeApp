@@ -1,95 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="16dp">
 
-    <!-- EditText para adicionar itens -->
-    <EditText
-        android:id="@+id/addItemEditText"
+    <!-- Container centralizado -->
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="@string/adicionar_item"
-        android:minHeight="48dp"
-        android:layout_marginTop="16dp"
-        android:layout_margin="16dp"
-        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent">
 
-    <!-- Botão para adicionar itens -->
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/addItemButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/adicionar_item1"
-        android:layout_marginBottom="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/addItemEditText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/button_background"
-        android:textColor="@android:color/white"
-        style="@style/customButton" />
+        <!-- EditText para adicionar itens -->
+        <EditText
+            android:id="@+id/addItemEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="@string/adicionar_item"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Botão para alternar entre modos -->
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/filterButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/trocar_adicionar_filtrar"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintTop_toBottomOf="@id/addItemButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/button_background"
-        android:textColor="@android:color/white"
-        style="@style/customButton" />
+        <!-- Botão para adicionar itens -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addItemButton"
+            style="@style/customButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/button_background"
+            android:text="@string/adicionar_item1"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/addItemEditText" />
 
-    <!-- Botão para exibir itens únicos -->
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/showSetButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/mostrar_itens_nicos"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintTop_toBottomOf="@id/filterButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/button_background"
-        android:textColor="@android:color/white"
-        style="@style/customButton" />
+        <!-- Botão para alternar entre modos -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/filterButton"
+            style="@style/customButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background"
+            android:text="@string/trocar_adicionar_filtrar"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/addItemButton" />
 
-    <!-- ListView para exibir itens -->
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        <!-- Botão para exibir itens únicos -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/showSetButton"
+            style="@style/customButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background"
+            android:text="@string/mostrar_itens_nicos"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/filterButton" />
 
-        app:layout_constraintTop_toBottomOf="@id/showSetButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        <!-- ListView para exibir itens -->
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/showSetButton" />
 
-    <!-- TextView para exibir informações adicionais -->
-    <TextView
-        android:id="@+id/mapTextView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/mapa_de_pre_os"
-        android:textSize="16sp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/listView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/button_background"
-        android:textColor="@android:color/white"
-        style="@style/customButton" />
-
+        <!-- TextView para exibir informações adicionais -->
+        <TextView
+            android:id="@+id/mapTextView"
+            style="@style/customButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:text="@string/mapa_de_pre_os"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/listView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

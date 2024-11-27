@@ -62,6 +62,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/notificationStatusTextView"
         android:layout_marginBottom="8dp"
+        android:thumbTint="@color/switch_thumb_color"
+        android:trackTint="@color/switch_track_color"
         style="@style/CustomSwitchStyle" />
 
     <!-- TextView de status de notificações -->
@@ -69,10 +71,11 @@
         android:id="@+id/notificationStatusTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/notifica_es_desativadas"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/notificationsSwitch"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/notifica_es_desativadas"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notificationsSwitch" />
 </androidx.constraintlayout.widget.ConstraintLayout>
