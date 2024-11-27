@@ -1,8 +1,8 @@
 # **Guiado pela Fé - App de Localização de Igrejas Evangélicas**
 
-![Logo do aplicativo Guiado pela Fé](app/src/main/res/drawable/imag1.png)
-
----
+<div align="center">
+    <img src="app/src/main/res/drawable/imag1.png" alt="Logo do Guiado pela Fé" width="200">
+</div>
 
 ## **Descrição**
 
