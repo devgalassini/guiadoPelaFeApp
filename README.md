@@ -1,33 +1,31 @@
 # **Guiado pela Fé - App de Localização de Igrejas Evangélicas**
 
+![Logo do aplicativo Guiado pela Fé](app/src/main/res/drawable/imag1.png)
 
+---
 
-  <div align="center">
-    <img src="app/src/main/res/drawable/imag1.png" width="200"/>
-</div>
+## **Descrição**
 
+O **Guiado pela Fé** é um aplicativo Android desenvolvido em **Kotlin** que ajuda os usuários a encontrar **igrejas evangélicas** próximas em tempo real, dentro de um raio específico. Utilizando **geolocalização**, o app identifica a posição do usuário e busca por igrejas nas proximidades, exibindo informações detalhadas sobre cada uma delas.
 
+---
 
+## **Funcionalidades**
 
-## Descrição
+- **Login**: Permite ao usuário se autenticar para acessar o aplicativo de forma segura.
+- **Geolocalização**: Localiza a posição do usuário em tempo real para encontrar igrejas próximas.
+- **Busca de Igrejas**: Realiza uma busca por igrejas evangélicas em um raio determinado a partir da localização atual do usuário.
+- **Exibição de Resultados**: Apresenta uma lista de igrejas encontradas, incluindo informações como nome, endereço, horários de funcionamento e distância.
+- **Navegação para a Igreja**: Oferece a opção de abrir o mapa e obter direções para chegar à igreja escolhida.
 
-O **Guiado pela Fé** é um aplicativo Android desenvolvido em **Kotlin** que permite aos usuários localizar **igrejas evangélicas** em tempo real, dentro de um raio específico, para que eles possam encontrar um local de adoração próximo de onde estão. O aplicativo utiliza a **geolocalização** para identificar a posição do usuário e buscar igrejas evangélicas nas proximidades, mostrando informações sobre cada igreja em tempo real.
+---
 
-## Funcionalidades
+## **Tecnologias Utilizadas**
 
-- **Login**: O usuário pode se autenticar para acessar o aplicativo.
-- **Geolocalização**: O app acessa a localização em tempo real do usuário para encontrar igrejas próximas.
-- **Busca de Igrejas**: Baseado na localização do usuário, o app encontra igrejas evangélicas próximas dentro de um raio de X metros.
-- **Exibição de Resultados**: Mostra na tela a lista de igrejas encontradas com detalhes como nome, endereço, dia e hoario de funcionamento e distância.
-- **Navegação para a Igreja**: O usuário pode clicar em uma igreja e ser redirecionado para um mapa com direções para a igreja.
-
-## Tecnologias Utilizadas
-
-- **Kotlin**: Linguagem de programação utilizada para desenvolver o app.
-- **Android SDK**: Plataforma para o desenvolvimento de aplicativos Android.
-- **Google Maps API**: Para mostrar a localização das igrejas e o caminho até elas.
-- **Firebase Authentication**: Para gerenciar o login e autenticação do usuário.
-- **Geofencing**: Para criar uma área de busca e encontrar igrejas em um raio específico.
-- **Retrofit**: Para realizar chamadas à API e obter os dados sobre igrejas.
-- **Room Database**: Para armazenar informações sobre igrejas localizadas pelo usuário.
-
+- **Kotlin**: Linguagem de programação moderna e concisa usada para o desenvolvimento do app.
+- **Android SDK**: Plataforma oficial para desenvolvimento de aplicativos Android.
+- **Google Maps API**: Utilizada para exibir a localização das igrejas e criar rotas até elas.
+- **Firebase Authentication**: Gerencia o login e a autenticação dos usuários.
+- **Geofencing**: Permite definir uma área de busca e encontrar igrejas em um raio específico.
+- **Retrofit**: Framework utilizado para realizar chamadas a APIs e obter dados sobre as igrejas.
+- **Room Database**: Banco de dados local para armazenar informações das igrejas encontradas.
