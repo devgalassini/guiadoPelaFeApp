@@ -8,7 +8,7 @@
 
 O **Guiado pela Fé** é um aplicativo Android desenvolvido em **Kotlin** que ajuda os usuários a encontrar **igrejas evangélicas** próximas em tempo real, dentro de um raio específico. Utilizando **geolocalização**, o app identifica a posição do usuário e busca por igrejas nas proximidades, exibindo informações detalhadas sobre cada uma delas.
 
----
+
 
 ## **Funcionalidades**
 
@@ -18,7 +18,7 @@ O **Guiado pela Fé** é um aplicativo Android desenvolvido em **Kotlin** que aj
 - **Exibição de Resultados**: Apresenta uma lista de igrejas encontradas, incluindo informações como nome, endereço, horários de funcionamento e distância.
 - **Navegação para a Igreja**: Oferece a opção de abrir o mapa e obter direções para chegar à igreja escolhida.
 
----
+
 
 ## **Tecnologias Utilizadas**
 
