@@ -41,7 +41,7 @@ class WidgetsActivity : AppCompatActivity() {
 
         // Alterar a imagem ao pressionar o botão
         button.setOnLongClickListener {
-            imageView.setImageResource(R.drawable.ic_launcher_foreground)
+            imageView.setImageResource(R.drawable.igreja)
             Toast.makeText(this, "Imagem alterada!", Toast.LENGTH_SHORT).show()
             true
         }
