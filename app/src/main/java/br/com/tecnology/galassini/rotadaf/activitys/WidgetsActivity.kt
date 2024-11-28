@@ -6,7 +6,6 @@
  * Se você tiver permissão para usar este código, ele é fornecido "no estado em que se encontra", sem garantia de qualquer tipo.
  */
 
-
 package br.com.tecnology.galassini.rotadaf.activitys
 
 import android.os.Bundle
